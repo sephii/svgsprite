@@ -1,4 +1,9 @@
-all:
+all: clean build
+
+clean:
+	rm -rf dist/*
+
+build:
 	python -m build
 
 upload:
